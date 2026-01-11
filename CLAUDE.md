@@ -81,7 +81,7 @@ uv run pytest tests/ --collect-only -q
 
 ```bash
 # Install from git
-uv tool install git+https://github.com/ilkkanisula/nanobanana.git
+uv tool install git+https://github.com/ilkkanisula/imggen.git
 
 # Or install locally for development
 uv pip install -e .
@@ -114,13 +114,18 @@ imggen -p "landscape" --provider google --resolution 4K
 imggen -p "landscape" --variations 4 --dry-run
 ```
 
-## Versioning
+## Versioning and Release
 
-Bump version in `pyproject.toml`:
+When releasing a new version:
 
 ```bash
-# 1. Update version field in pyproject.toml (use semantic versioning)
-# 2. Commit: git commit -m "Bump version to X.Y.Z"
+# 1. Update version in pyproject.toml (semantic versioning)
+# 2. Update __version__ in src/imggen/version.py
+# 3. Commit: git commit -m "Bump version to X.Y.Z"
+# 4. Create tag: git tag vX.Y.Z
+# 5. Push tag to remote: git push origin vX.Y.Z
 ```
+
+Always push tags to remote on release - required for `imggen check-update` and version management.
 
 
