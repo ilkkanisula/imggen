@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "imggen"
+version = "1.0.0"
+description = "Generate images using Google's Nanobanana API"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "ilkkanisula", email = "ilkkanisula@gmail.com"}]
+license = {text = "MIT"}
+dependencies = [
+    "google-genai",
+    "openai",
+]
+
+[project.scripts]
+imggen = "imggen.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/imggen"]
