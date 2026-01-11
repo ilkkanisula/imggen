@@ -14,7 +14,7 @@ This guide provides step-by-step instructions for manually testing the batch and
 2. **Required Files**
    ```bash
    # Verify you're in the project root
-   pwd  # Should show: /Users/ilkkanisula/work/ai/tools/nanobanana
+   pwd  # Should show: /Users/ilkkanisula/work/ai/tools/imggen
 
    # Check files exist
    ls -la generate.py
@@ -592,7 +592,7 @@ echo "GOOGLE_API_KEY=your_key_here" > .env
 ```bash
 # Ensure you're in the project root
 pwd
-cd /Users/ilkkanisula/work/ai/tools/nanobanana
+cd /Users/ilkkanisula/work/ai/tools/imggen
 ```
 
 ### Issue: "ModuleNotFoundError: No module named 'google'"

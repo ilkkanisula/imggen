@@ -15,7 +15,7 @@ def update_imggen():
             "uv", "tool", "install",
             "--reinstall",
             "--force",
-            "git+https://github.com/ilkkanisula/nanobanana.git"
+            "git+https://github.com/ilkkanisula/imggen.git"
         ], check=True)
 
         print()

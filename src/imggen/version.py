@@ -6,8 +6,8 @@ import sys
 __version__ = "1.0.0"
 
 # Repository details
-REPO_URL = "https://github.com/ilkkanisula/nanobanana"
-REPO_NAME = "ilkkanisula/nanobanana"
+REPO_URL = "https://github.com/ilkkanisula/imggen"
+REPO_NAME = "ilkkanisula/imggen"
 
 
 def get_current_version():

@@ -26,7 +26,7 @@ Generate images using AI providers: **OpenAI GPT Image 1.5** (default) or **Goog
 
 ```bash
 # 1. Install imggen
-uv tool install git+https://github.com/ilkkanisula/nanobanana.git
+uv tool install git+https://github.com/ilkkanisula/imggen.git
 
 # 2. Generate an image (prompts for API key on first run)
 imggen -p "a serene mountain landscape at sunset"
@@ -65,7 +65,7 @@ Direct CLI invocation
 ## Installation
 
 ```bash
-uv tool install git+https://github.com/ilkkanisula/nanobanana.git
+uv tool install git+https://github.com/ilkkanisula/imggen.git
 ```
 
 ### API Key Setup
@@ -261,7 +261,7 @@ imggen check-update
 # Then run:
 imggen update
 # or use uv directly:
-uv tool install --upgrade git+https://github.com/ilkkanisula/nanobanana.git
+uv tool install --upgrade git+https://github.com/ilkkanisula/imggen.git
 ```
 
 **Rate limited?**

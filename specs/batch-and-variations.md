@@ -1,4 +1,4 @@
-# Nanobanana Batch & Variations Spec
+# imggen Batch & Variations Spec
 
 ## Overview
 Batch processing and variation generation using natural language parsing with Gemini API.
@@ -216,9 +216,9 @@ cat output/image_005/prompt.txt
 
 ## Critical Implementation Files
 
-- `/Users/ilkkanisula/work/ai/tools/nanobanana/generate.py` - Rewrite as single script
-- `/Users/ilkkanisula/work/ai/tools/nanobanana/README.md` - Update docs
-- `/Users/ilkkanisula/work/ai/tools/nanobanana/specs/batch-and-variations.md` - This file
+- `/Users/ilkkanisula/work/ai/tools/imggen/generate.py` - Rewrite as single script
+- `/Users/ilkkanisula/work/ai/tools/imggen/README.md` - Update docs
+- `/Users/ilkkanisula/work/ai/tools/imggen/specs/batch-and-variations.md` - This file
 
 ## YAML Schema
 

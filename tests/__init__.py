@@ -1,1 +1,1 @@
-"""Tests for nanobanana generate.py"""
+"""Tests for imggen"""
