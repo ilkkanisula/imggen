@@ -1,5 +1,13 @@
 # Release History
 
+## v1.0.2 - 2026-01-15
+
+### Fixes
+- Optimize metadata JSON storage to reduce clutter
+- Fix type annotations in metadata file storage
+
+---
+
 ## v1.0.1 - 2026-01-11
 
 ### Fixes
