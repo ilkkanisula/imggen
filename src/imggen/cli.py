@@ -248,7 +248,7 @@ def main():
     )
     parser.add_argument(
         "--model", "-m",
-        help="Model name (auto-infers provider, default: gpt-image-1.5)"
+        help="Model name or alias (google, openai). Default: gpt-image-1.5"
     )
     parser.add_argument(
         "--quality", "-q",
@@ -283,10 +283,13 @@ def main():
         print(f"Error: {e}")
         sys.exit(1)
 
-    # Determine provider
+    # Determine provider and resolve model aliases
     provider_name = None
-    if args.model:
-        provider_name = infer_provider_from_model(args.model)
+    model = args.model
+    if model:
+        provider_name = infer_provider_from_model(model)
+        if model in ("google", "openai"):
+            model = None  # let provider use its default model
     else:
         config = load_config()
         provider_name = config.get("default_provider", DEFAULT_PROVIDER)
@@ -315,7 +318,7 @@ def main():
             aspect_ratio=args.aspect_ratio,
             quality=args.quality,
             resolution=args.resolution,
-            model=args.model,
+            model=model,
             input_fidelity=getattr(args, 'input_fidelity', None),
             dry_run=args.dry_run,
         )

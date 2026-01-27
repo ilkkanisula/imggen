@@ -1,5 +1,13 @@
 # Release History
 
+## v1.1.1 - 2026-01-27
+
+### Fixes
+- Fix `--model google` and `--model openai` aliases resolving to wrong provider
+- Bare provider names now correctly select the provider's default model
+
+---
+
 ## v1.1.0 - 2026-01-26
 
 ### Features

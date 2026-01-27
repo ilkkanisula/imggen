@@ -87,12 +87,13 @@ def infer_provider_from_model(model_name: str) -> str:
     Returns:
         Provider name: "google" or "openai"
     """
-    if model_name.startswith("gemini-") or model_name.startswith("google-"):
+    if model_name in ("google", "openai"):
+        return model_name
+    elif model_name.startswith("gemini-") or model_name.startswith("google-"):
         return "google"
     elif model_name.startswith("gpt-") or model_name.startswith("dall-e-"):
         return "openai"
     else:
-        # Default to OpenAI
         return "openai"
 
 

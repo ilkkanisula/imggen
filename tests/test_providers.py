@@ -47,6 +47,11 @@ class TestProviderInference:
         assert infer_provider_from_model("dall-e-3") == "openai"
         assert infer_provider_from_model("dall-e-2") == "openai"
 
+    def test_infer_from_bare_provider_name(self):
+        """Test inferring provider from bare provider names like 'google' or 'openai'."""
+        assert infer_provider_from_model("google") == "google"
+        assert infer_provider_from_model("openai") == "openai"
+
     def test_unknown_model_defaults_to_openai(self):
         """Test that unknown model defaults to OpenAI."""
         assert infer_provider_from_model("unknown-model") == "openai"
