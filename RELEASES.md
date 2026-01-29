@@ -1,5 +1,12 @@
 # Release History
 
+## v1.1.2 - 2026-01-29
+
+### Fixes
+- Add missing Pillow dependency required by Google provider
+
+---
+
 ## v1.1.1 - 2026-01-27
 
 ### Fixes
